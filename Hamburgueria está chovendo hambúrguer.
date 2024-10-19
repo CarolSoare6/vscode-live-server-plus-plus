@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Exemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hamburgueria Exemplo</h1>
+        <p>O melhor hambúrguer da cidade!</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Cardápio</a>
+        <a href="#historia">História</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+        <a href="#localizacao">Localização</a>
+    </nav>
+
+    <div class="container" id="menu">
+        <h2>Cardápio</h2>
+        <table>
+            <tr>
+                <th>Hambúrguer</th>
+                <th>Ingredientes</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Cheeseburger</td>
+                <td>Pão, carne, queijo, alface, tomate</td>
+                <td>R$ 25,00</td>
+            </tr>
+            <tr>
+                <td>Bacon Burger</td>
+                <td>Pão, carne, queijo, bacon, alface, tomate</td>
+                <td>R$ 30,00</td>
+            </tr>
+            <tr>
+                <td>Chicken Burger</td>
+                <td>Pão, frango, queijo, alface, tomate</td>
+                <td>R$ 28,00</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>Pão, hambúrguer vegetal, alface, tomate</td>
+                <td>R$ 26,00</td>
+            </tr>
+            <tr>
+                <td>Double Cheeseburger</td>
+                <td>Pão, 2 carnes, queijo, alface, tomate</td>
+                <td>R$ 35,00</td>
+            </tr>
+            <tr>
+                <td>BBQ Burger</td>
+                <td>Pão, carne, queijo, cebola caramelizada, molho BBQ</td>
+                <td>R$ 32,00</td>
+            </tr>
+            <tr>
+                <td>Egg Burger</td>
+                <td>Pão, carne, queijo, ovo, alface, tomate</td>
+                <td>R$ 29,00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container" id="historia">
+        <h2>História</h2>
+        <p>A Hamburgueria Exemplo foi fundada em 2010 com o objetivo de trazer os melhores hambúrgueres artesanais para a cidade. Desde então, conquistamos a preferência dos clientes pela qualidade dos nossos produtos.</p>
+    </div>
+
+    <div class="container" id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Missão: Nossa missão é oferecer hambúrgueres deliciosos e feitos com ingredientes selecionados, proporcionando uma experiência única para nossos clientes.</p>
+        <p>Visão: Ser a hamburgueria mais reconhecida e amada da região.</p>
+        <p>Valores: Qualidade, atendimento excepcional, inovação e responsabilidade com o meio ambiente.</p>
+    </div>
+
+    <div class="container" id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Horário de Atendimento</h2>
+        <p>Segunda a Sexta: 11:00 - 23:00</p>
+        <p>Sábado e Domingo: 12:00 - 00:00</p>
+    </div>
+
+    <div class="container" id="localizacao">
+        <h2>Localização</h2>
+        <p>Rua dos Burgers, 456, Centro - Cidade Exemplo, SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.089084317089!2d-46.636679984501306!3d-23.59148846741352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8c6b8b56d%3A0x8e95ab8c1beaba93!2sRua+dos+Burgers%2C+456%2C+Cidade+Exemplo%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1634249321657!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hamburgueria Exemplo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
